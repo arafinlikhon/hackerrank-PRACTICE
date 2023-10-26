@@ -1,0 +1,14 @@
+#
+# Complete the 'print_full_name' function below.
+#
+# The function is expected to return a STRING.
+# The function accepts following parameters:
+#  1. STRING first
+#  2. STRING last
+#
+
+def print_full_name(first, last):
+    full_name = f"{first} {last}"
+
+    # Use title() to capitalize the first letter of each word
+    print(f"Hello {full_name.title()}! You just delved into python.")
