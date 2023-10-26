@@ -1,0 +1,15 @@
+if __name__ == '__main__':
+    students = []  # Initialize a list to store student information
+    
+    # Input the number of students
+    n = int(input())
+    
+    # Input student names and scores and store them in the list
+    for _ in range(n):
+        name = input()
+        score = float(input())
+        students.append([name, score])
+    
+    # Find the second lowest score
+    scores = set([s for n, s in students])
+    second_lowest_score = sorted(scores)[1]
