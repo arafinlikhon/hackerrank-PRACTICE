@@ -1,0 +1,25 @@
+
+if __name__ == '__main__':
+    s = input()
+
+    # Check if the string contains alphanumeric characters
+    is_alnum = any(c.isalnum() for c in s)
+
+    # Check if the string contains alphabetical characters
+    is_alpha = any(c.isalpha() for c in s)
+
+    # Check if the string contains digits
+    is_digit = any(c.isdigit() for c in s)
+
+    # Check if the string contains lowercase characters
+    is_lower = any(c.islower() for c in s)
+
+    # Check if the string contains uppercase characters
+    is_upper = any(c.isupper() for c in s)
+
+    # Print the results
+    print(is_alnum)
+    print(is_alpha)
+    print(is_digit)
+    print(is_lower)
+    print(is_upper)
