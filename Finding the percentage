@@ -1,0 +1,21 @@
+if __name__ == '__main__':
+    n = int(input())
+    student_marks = {}
+    
+    # Read and store student records
+    for _ in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    
+    query_name = input()  # Name of the student to query
+
+    # Calculate the average marks for the specified student
+    if query_name in student_marks:
+        marks = student_marks[query_name]
+        average = sum(marks) / len(marks)
+        
+        # Print the average with 2 decimal places
+        print("{:.2f}".format(average))
+    else:
+        print("Student not found")  # Handle the case if the student name is not in the records
