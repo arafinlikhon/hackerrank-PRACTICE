@@ -1,1 +1,16 @@
 
+
+def solveMeFirst(a, b):
+    if a > 0 and b > 0 and a <= 1000 and b <= 1000:
+        return a + b
+    else:
+        return None
+
+num1 = int(input())
+num2 = int(input())
+res = solveMeFirst(num1, num2)
+
+if res is not None:
+    print(res)
+else:
+    print("Invalid input. Both numbers should be positive and less than or equal to 1000.")
