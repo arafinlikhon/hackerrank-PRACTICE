@@ -1,0 +1,14 @@
+def print_rangoli(size):
+ 
+    width = 4 * size - 3
+
+   
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
+    
+    rangoli_lines = []
+
+    # Build the rangoli
+    for i in range(size):
+        # Create the left half of the line
+        left_half = '-'.join(alphabet[size - 1:i:-1] + alphabet[i:size])
