@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+
+A_power_B = a ** b
+C_power_D = c ** d
+
+allsum = A_power_B + C_power_D
+print(allsum)
