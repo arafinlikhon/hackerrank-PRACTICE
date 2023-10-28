@@ -1,0 +1,17 @@
+import calendar
+
+# Input format: month day year
+date_input = input().split()
+month, day, year = int(date_input[0]), int(date_input[1]), int(date_input[2])
+
+# Get the day of the week as an integer (0 = Monday, 6 = Sunday)
+day_of_week = calendar.weekday(year, month, day)
+
+# Convert the integer to the corresponding day of the week
+day_name = calendar.day_name[day_of_week]
+
+# Output the day in capital letters
+print(day_name.upper())
+
+
+# I had a blast solving this one, and it was incredibly educational. Learning while having fun is the best! 🚀😊
