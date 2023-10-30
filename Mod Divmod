@@ -1,0 +1,23 @@
+# Prompt the user to enter the first number
+a = int(input())
+
+# Prompt the user to enter the second number
+b = int(input())
+
+# Calculate the integer division of a by b
+division = a // b
+
+# Calculate the remainder when a is divided by b
+modulo = a % b
+
+# Use divmod to get both the quotient and remainder
+result = divmod(a, b)
+
+# Print the integer division result
+print(division)
+
+# Print the remainder result
+print(modulo)
+
+# Print the result from divmod
+print(result)
