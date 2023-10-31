@@ -1,0 +1,17 @@
+# Define a function to split a string into substrings of length 'k' and print unique characters in each substring
+def merge_the_tools(string, k):
+    n = len(string)  # Get the length of the input string
+    for i in range(0, n, k):  # Loop through the string in steps of 'k'
+        sub_str = string[i:i + k]  # Extract a substring of length 'k'
+        unique_sub_str = ""  # Initialize an empty string to store unique characters
+
+        # Loop through the characters in the substring
+        for char in sub_str:
+            if char not in unique_sub_str:  # If the character is not already in the unique_sub_str
+                unique_sub_str += char  # Add the character to the unique_sub_str
+        print(unique_sub_str)  # Print the resulting unique substring
+
+if __name__ == '__main__':
+    string = input()  # Read the input string
+    k = int(input())  # Read the value of 'k'
+    merge_the_tools(string, k)  # Call the merge_the_tools function with the provided input
