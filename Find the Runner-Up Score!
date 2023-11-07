@@ -1,0 +1,17 @@
+if __name__ == '__main__':
+    n = int(input())
+    scores = [int(x) for x in input().split()]
+
+    max_score = -101  # Initialize max_score to a value lower than the possible score
+
+    for score in scores:
+        if score > max_score:
+            max_score = score
+
+    runner_up_score = -101  # Initialize runner_up_score to a value lower than the possible score
+
+    for score in scores:
+        if score < max_score and score > runner_up_score:
+            runner_up_score = score
+
+    print(runner_up_score)
