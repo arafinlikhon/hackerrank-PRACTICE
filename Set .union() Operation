@@ -1,0 +1,12 @@
+# Input handling
+if __name__ == '__main__':
+    n = int(input())  # Number of students subscribed to the English newspaper
+    english_subscribers = set([int(x) for x in input().split()])  # Roll numbers of English subscribers as a set
+
+    m = int(input())  # Number of students subscribed to the French newspaper
+    french_subscribers = set([int(x) for x in input().split()])  # Roll numbers of French subscribers as a set
+
+    # Find the total number of students who have at least one subscription
+    total_subscribers = len(english_subscribers.union(french_subscribers))
+
+    print(total_subscribers)
