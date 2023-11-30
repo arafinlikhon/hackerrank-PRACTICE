@@ -1,0 +1,12 @@
+# Read input for English paper subscribers
+n = int(input("Enter the number of people who subscribed to the English paper: "))
+roll_n = input("Enter the roll numbers separated by spaces: ")
+roll_n_set = set(roll_n.split())
+
+# Read input for French paper subscribers
+b = int(input("Enter the number of people who subscribed to the French paper: "))
+roll_b = input("Enter the roll numbers separated by spaces: ")
+roll_b_set = set(roll_b.split())
+
+intersection = roll_n_set.intersection(roll_b_set)
+print("Common roll numbers between English and French paper subscribers:", intersection)
